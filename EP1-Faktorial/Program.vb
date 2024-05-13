@@ -1,6 +1,5 @@
 ﻿Imports System
 
-Imports System
 
 Module Program
     Sub Main(args As String())
@@ -9,6 +8,11 @@ Module Program
 
         Console.Write("Zadej èíslo: ")
         cislo = Console.ReadLine
+        If cislo <= 0 Then
+            Console.Write("Chyba vstupu!")
+            End
+        End If
+
 
         For i = 1 To cislo
             soucet = soucet + i
