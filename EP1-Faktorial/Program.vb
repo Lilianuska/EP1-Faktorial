@@ -17,6 +17,10 @@ Module Program
             Console.Write("Zadej menší číslo!")
             End
         End If
+        If cislo < 0 Then
+            Console.Write("Zadej celé číslo!")
+        End If
+
 
         For i = 1 To cislo
             soucet = soucet + i
