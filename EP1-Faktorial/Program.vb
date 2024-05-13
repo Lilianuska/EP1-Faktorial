@@ -13,6 +13,10 @@ Module Program
             End
         End If
 
+        If cislo > 10 Then
+            Console.Write("Zadej menší číslo!")
+            End
+        End If
 
         For i = 1 To cislo
             soucet = soucet + i
