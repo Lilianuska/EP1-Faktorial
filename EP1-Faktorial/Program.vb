@@ -4,7 +4,7 @@
 Module Program
     Sub Main(args As String())
         Dim cislo As Integer
-        Dim soucet As Integer = 0
+        Dim součin As Integer = 0
 
         Console.Write("Zadej èíslo: ")
         cislo = Console.ReadLine
@@ -22,11 +22,13 @@ Module Program
         End If
 
 
-        For i = 1 To cislo
-            soucet = soucet + i
+
+        součin = cislo * (cislo - 1)
         Next
 
-        Console.WriteLine($"Souèet od 1 do {cislo} je {soucet}")
+        Console.WriteLine($"Součin od 1 do {cislo} je {součin}")
+
+
 
     End Sub
 End Module
